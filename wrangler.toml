@@ -1,5 +1,8 @@
 name = "trojan"
 main = "_worker.js"
 compatibility_date = "2025-08-07"
+[env.dev.triggers]
+crons = ["0 * * * *"]
 
 keep_vars = true
+
