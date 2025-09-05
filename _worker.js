@@ -128,7 +128,7 @@ export default {
 
                 if (url.searchParams.has('proxyip')) {
                     path = `/proxyip=${url.searchParams.get('proxyip')}`;
-                    RproxyIP = 'true';
+                    RproxyIP = 'false';
                 } else if (url.searchParams.has('socks5')) {
                     path = `/?socks5=${url.searchParams.get('socks5')}`;
                     RproxyIP = 'false';
