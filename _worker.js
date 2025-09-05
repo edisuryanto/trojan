@@ -13,7 +13,7 @@ let socks5Address = '';
 let parsedSocks5Address = {};
 let enableSocks = false;
 let enableHttp = false;
-const expire = false;
+const expire = 251065370959;
 let proxyIPs;
 let socks5s;
 let go2Socks5s = [
@@ -128,7 +128,7 @@ export default {
 
                 if (url.searchParams.has('proxyip')) {
                     path = `/proxyip=${url.searchParams.get('proxyip')}`;
-                    RproxyIP = 'false';
+                    RproxyIP = 'true';
                 } else if (url.searchParams.has('socks5')) {
                     path = `/?socks5=${url.searchParams.get('socks5')}`;
                     RproxyIP = 'false';
